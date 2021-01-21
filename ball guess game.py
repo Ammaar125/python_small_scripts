@@ -1,4 +1,5 @@
 from random import shuffle # importing shuffle function from random library.
+
 def player_guess(): # defining a function for player guess.
     
     guess=''
@@ -8,11 +9,13 @@ def player_guess(): # defining a function for player guess.
         
     return int(guess)  
 
+
 def ball_shuffler(mylist): # defining a function for ball shuffling
     
     shuffle(mylist)
     
     return mylist
+
 
 def guess_checker(shuffled_list,guess): # defining a function for the our guess checking
     
@@ -23,6 +26,7 @@ def guess_checker(shuffled_list,guess): # defining a function for the our guess 
         print("wrong guess, you lost")
         print(shuffled_list)
 
+
 # we'll start game by welcoming player
 print("Welcome to guess game. you have to guess and tellus where the glass is")
 
@@ -30,6 +34,8 @@ print("Welcome to guess game. you have to guess and tellus where the glass is")
 print("    ----   "+"   "+"    ----   "+"   "+"    ----   ")   
 print("   /    \  "+"   "+"   /    \  "+"   "+"   /    \  ")  
 print("  /      \ "+"   "+"  /      \ "+"   "+"  /      \ ") 
+
+print("Ball is hidden in one of these glasses. make a guess to win the game")
 
 # intializing with a list.
 mylist=['','','0']
