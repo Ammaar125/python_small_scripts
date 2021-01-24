@@ -5,7 +5,6 @@ def player_guess(): # defining a function for player guess.
     guess=''
     
     while guess not in['0','1','2']:
-        print("incorrect input. please enter the correct input")
         guess=input("Enter the number between 0,1 and 2: ")
         
     return int(guess)  
