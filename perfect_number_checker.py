@@ -14,4 +14,7 @@ try:
 except Exception:
     print("invalid Input. give a valid input")
 
-print("done!")
+else:
+    print("Done!")
+finally:
+    print("command executed!")
