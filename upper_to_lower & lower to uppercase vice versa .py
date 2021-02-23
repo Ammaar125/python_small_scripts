@@ -9,7 +9,7 @@ try:
         elif i in small_letter:
             m.append(small_letter[i])
            
-    a=''.join(m)
+    a=' '.join(m)
     print("here is the your sentence with vice versa operation")
     print(s,"=",a)
 except Exception:
